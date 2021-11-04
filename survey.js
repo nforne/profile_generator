@@ -33,7 +33,7 @@ rl.question(qs_list[0] , (answer) => {
             profile["absouteFavouriteSports"] = answer;
             rl.question(qs_list[6] , (answer) => {
               profile["Superpower"] = answer;
-              ak_list = Object.keys(profile); 
+              const ak_list = Object.keys(profile); 
               console.log(profile);
               console.log(
                 `\n${profile[ak_list[0]]} likes doing ${profile[ak_list[1]]} while listenig to ${profile[ak_list[2]]}. 
