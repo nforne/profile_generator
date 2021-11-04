@@ -6,7 +6,7 @@ const rl = readline.createInterface({
 });
 
 
-let qs_list = [
+let qs_list = [ //survey questions list
   "What's your name? Nicknames are also acceptable :)",
   "What's an activity you like doing?",
   "What do you listen to while doing that?",
@@ -33,13 +33,13 @@ rl.question(qs_list[0] , (answer) => {
             profile["absouteFavouriteSports"] = answer;
             rl.question(qs_list[6] , (answer) => {
               profile["Superpower"] = answer;
-              const ak_list = Object.keys(profile); 
+              const ak_list = Object.keys(profile); // profile(answers) keys list
               console.log(profile);
               console.log(
                 `\n${profile[ak_list[0]]} likes doing ${profile[ak_list[1]]} while listenig to ${profile[ak_list[2]]}. 
                 \nFavourite meal is ${profile[ak_list[3]]} and favourtie food is ${profile[ak_list[4]]}. 
                 \nAbsolute favourite sports is ${profile[ak_list[5]]} and superpower is: ${profile[ak_list[6]]}\n`
-              );              
+              );
               rl.close();
             });
             // rl.close();
@@ -57,7 +57,7 @@ rl.question(qs_list[0] , (answer) => {
 
 //---------------------------------------------------
 // *** falty : but with a lesson - don't miss it ***
-  /*
+/*
   let outPut = "";
 
   rl.question(qs_list[0] , (answer) => {
